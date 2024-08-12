@@ -1,0 +1,31 @@
+{
+  "name": "graph-backend",
+  "version": "1.0.0",
+  "description": "A Node.js Express backend with MongoDB application which return graph data.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test:api": "mocha src/tests/*.test.js --exit",
+    "test:unit": "mocha src/**/*.spec.js --timeout 20000 --exit",
+    "seed": "node src/seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.2"
+  },
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "chai-http": "^5.0.0",
+    "mocha": "^10.7.0",
+    "mongodb-memory-server": "^10.0.0",
+    "sinon": "^18.0.0",
+    "supertest": "^7.0.0"
+  }
+}
